@@ -1,0 +1,40 @@
+.sidebar-main {
+    width: 100%;
+    
+}
+
+.side-social-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page-links, .tech-tags {
+    margin-top: 3rem;
+    padding-top: 7rem;
+    font-family: "Raleway";
+}
+
+.mobile-tech-tags{
+    display: none;
+}
+
+.profile-img {
+     border-radius: 50%;
+     box-shadow: 1px 1px 3px;
+}
+
+small, h3, p, li {
+    font-family: 'Raleway';
+    
+}
+
+.author-bio {
+    font-size: 2vw;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .mobile-tech-tags{
+        display: inline-block;
+    }
+}
