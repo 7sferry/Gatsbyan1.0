@@ -45,14 +45,12 @@
   },
   "keywords": [
     "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme",
+    "contentful",
     "ferry suhandri",
-    "solok",
-    "sumatera barat",
-    "advotics",
-    "jatis",
-    "ix korong",
-    "lubuk sikarah",
-    "software engineer"
+    "facebook",
+    "solok"
   ],
   "license": "MIT",
   "scripts": {
