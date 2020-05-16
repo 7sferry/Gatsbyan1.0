@@ -24,7 +24,8 @@ I decide to share my blog template as open source on github.
 - create file .env on your root projects directory
 - set your spaceId and token from contenful CMS on '.env'
 (you can look at [here](https://github.com/7sferry/Gatsbyan1.0#step-to-get-spaceid-and-token))
-- you also could change every properties on config at 'config.js' or modify SEO variables at '/src.components/SEO.js'
+- you could change every properties on config at 'config.js' or modify SEO variables at '/src.components/SEO.js'
+- you also could change facebook appId with your appId for comment section at '/src.components/Comment.js'
 - execute 'npm run develop' on cli
 - your site would be run on http://localhost:8000
 
