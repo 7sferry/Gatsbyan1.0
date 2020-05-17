@@ -6,19 +6,16 @@ const Menu = () => {
   return <div className="social-links float-right mr-4">{menus}</div>;
 };
 
-export const menus = Array.of(
-  {
-    link: "",
-    text: (
-      <>
-        <FaHome title={'Home'} size={20} /> Home
-      </>
-    ),
-  },
-).map(menu => {
+export const menus = Array.of({
+  link: "/",
+  icon: <FaHome title={"Homepage"} size={20} />,
+  text: "Home",
+}).map(menu => {
   return (
-    <Link key={menu.link} to={`/${menu.link}`}>
-      <span className="text-side d-block ml-4">{menu.text}</span>
+    <Link key={menu.link} to={menu.link}>
+      <span className="text-side d-block ml-4">
+        {menu.icon} {menu.text}
+      </span>
     </Link>
   );
 });
