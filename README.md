@@ -63,4 +63,4 @@ file you created before
 You can deploy your site to any static site hosting like netlify, vercel, or anywhere. There is webhook on netlify 
 and you can set this up later to your site hosting for content update everytime you publish your content.
 
-If you have trouble to setting this up, don't hesitate to contact me 😎
+If you having trouble setting this up, don't hesitate to contact me 😎
