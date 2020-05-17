@@ -1,7 +1,7 @@
 # Gatsbyan1.0
-![](https://github.com/7sferry/Gatsbyan1.0/blob/master/static/example.png?raw=true)
-
 I decide to share my blog template as open source on github. You can access my blog at https://ferry.now.sh
+
+![](https://github.com/7sferry/Gatsbyan1.0/blob/master/static/example.png?raw=true)
 
 ## Tech used: 
 - GatsbyJS
