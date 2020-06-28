@@ -13,23 +13,23 @@ import { useStaticQuery, graphql } from "gatsby";
 function SEO({ description, lang, meta, title, image, url }) {
   const { site } = useStaticQuery(
     graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            realName
-            siteUrl
-          }
+        query {
+            site {
+                siteMetadata {
+                    title
+                    description
+                    author
+                    realName
+                    siteUrl
+                }
+            }
         }
-      }
     `
   );
 
   const metadata = site.siteMetadata;
   const metaDescription = description ? `Ferry Suhandri. ${description}` : metadata.description;
-  const metaImage = image ? `https:${image}` : `${url}/ferry-suhandri.jpg`;
+  const metaImage = image ? `https:${image}` : `${metadata.siteUrl}/ferry-suhandri.jpg`;
   const metaUrl = url || metadata.siteUrl;
 
   return (
@@ -98,11 +98,11 @@ function SEO({ description, lang, meta, title, image, url }) {
         },
         {
           property: `fb:app_id`,
-          content: `your app coment`,
+          content: `1365740643629290`,
         },
         {
           name: `google-site-verification`,
-          content: `your site verification`,
+          content: `cwJMiAjJ6equmiWoxPyFPCua6fsv_rs6wMG63kECYxQ`,
         },
       ].concat(meta)}
     />

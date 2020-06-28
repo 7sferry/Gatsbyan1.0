@@ -12,11 +12,11 @@ I decide to share my blog template as open source on github. You can access my b
 - and many others, you can check the pakcage.json
 
 ## Requirements:
-- Node JS
-- Gatsby CLI
+- Node JS - I used Node v12.8.1
+- Gatsby CLI - I used gatsby-cli v2.10.10
 - Git
 - Contentful CMS account
-- Facebook account (optional, for blog comment)
+- Facebook account - optional for blog comment
 
 ## Step to Install:
 - run 'git clone https://github.com/7sferry/Gatsbyan1.0.git'

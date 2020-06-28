@@ -36,6 +36,7 @@ build/Release
 .idea/
 node_modules/
 jspm_packages/
+*.iml
 
 # Typescript v1 declaration files
 typings/

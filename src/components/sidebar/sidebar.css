@@ -1,6 +1,6 @@
 .sidebar-main {
     width: 100%;
-    
+
 }
 
 .side-social-links {
@@ -11,7 +11,7 @@
 .page-links, .tech-tags {
     margin-top: 3rem;
     padding-top: 7rem;
-    font-family: "Raleway";
+    font-family: "Raleway", serif;
 }
 
 .mobile-tech-tags{
@@ -19,13 +19,13 @@
 }
 
 .profile-img {
-     border-radius: 50%;
-     box-shadow: 1px 1px 3px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px;
 }
 
 small, h3, p, li {
-    font-family: 'Raleway';
-    
+    font-family: "Raleway", serif;
+
 }
 
 .author-bio {

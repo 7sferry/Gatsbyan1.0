@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 p, .title {
     font-family: "Raleway", serif;
@@ -91,13 +92,13 @@ a, a:hover, .text-side:hover, .text-link:link, .text-link:hover, .text-link:visi
 }
 
 @media only screen and (max-width: 850px) {
-  .sidebar{display: none;}
-  .index-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .main-layout{
-      padding: 1.5rem 0 0;
-  }
+    .sidebar{display: none;}
+    .index-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .main-layout{
+        padding: 1.5rem 0 0;
+    }
 }

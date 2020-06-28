@@ -9,8 +9,8 @@ import { FacebookProvider, Comments } from "react-facebook";
 export default class Comment extends Component {
   render() {
     return (
-      <FacebookProvider appId="your fb id">
-        <Comments href={this.props.href} orderBy="social" mobile={true} width="100%" colorScheme="dark" />
+      <FacebookProvider appId="wrtie_your_fb_id_here">
+        <Comments href={this.props.href} orderBy="reverse_time" mobile={true} width="100%" colorScheme="dark" />
       </FacebookProvider>
     );
   }
