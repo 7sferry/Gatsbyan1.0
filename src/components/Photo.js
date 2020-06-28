@@ -9,7 +9,7 @@ const useSiteMetadata = () => {
   const { file } = useStaticQuery(
     graphql`
         query Bio {
-            file(relativePath: { eq: "ferry.jpg" }) {
+            file(relativePath: { eq: "profile.jpg" }) {
                 childImageSharp {
                     fixed(width: 150, quality: 100) {
                         width
