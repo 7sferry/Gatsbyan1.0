@@ -4,7 +4,7 @@ module.exports = {
   url: "https://your-site.com",
   title: "Your blog title",
   tagline: "Your tagline",
-  description: `Your description`,
+  description: `Built by Ferry Suhandri. Get your gatsby contentful template starters here!`,
   copyright: `© ${new Date().getFullYear()} Ferry Suhandri.`,
   author: {
     name: "Ferry S",
