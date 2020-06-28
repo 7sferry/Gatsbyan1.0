@@ -6,12 +6,20 @@ https://ferry.now.sh
 
 ![](https://github.com/7sferry/Gatsbyan1.0/blob/master/static/example.png?raw=true)
 
+## Features:
+- Contentful CMS
+- Facebook Comment
+- Tags
+- SEO
+- Archives by date
+- Pagination
+- Many more...
+
 ## Tech used: 
 - GatsbyJS
 - React
 - Contentful CMS
 - Lodash
-- Facebook comment
 - and many others, you can check the pakcage.json
 
 ## Requirements:
