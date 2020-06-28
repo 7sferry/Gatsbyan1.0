@@ -38,7 +38,7 @@ function SEO({ description, lang, meta, title, image, url }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${metadata.realName}`}
+      titleTemplate={`%s`}
       meta={[
         {
           name: `description`,
@@ -98,11 +98,11 @@ function SEO({ description, lang, meta, title, image, url }) {
         },
         {
           property: `fb:app_id`,
-          content: `1365740643629290`,
+          content: `your_fb_app_id`,
         },
         {
           name: `google-site-verification`,
-          content: `cwJMiAjJ6equmiWoxPyFPCua6fsv_rs6wMG63kECYxQ`,
+          content: `your_google_site_verification`,
         },
       ].concat(meta)}
     />
