@@ -66,7 +66,7 @@ file you created before
 You can deploy your site to any static site hosting like netlify, vercel, or anywhere. There is webhook on netlify 
 and you can set this up later to your site hosting for content update everytime you publish your content.
 
-here is the google page speed insight result for both mobile and desktop
+here is the [google page speed insight](https://developers.google.com/speed/pagespeed/insights/) score for both mobile and desktop
 ![](https://github.com/7sferry/Gatsbyan1.0/blob/master/static/mobile.png?raw=true)
 
 ![](https://github.com/7sferry/Gatsbyan1.0/blob/master/static/desktop.png?raw=true)
