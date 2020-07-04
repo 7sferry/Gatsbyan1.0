@@ -57,18 +57,23 @@ class ArchivePage extends React.Component {
   render() {
     const posts = this.props.data.allContentfulBlogPost.nodes;
     let postByMonth = new Map();
-    let lastDate = "";
-    posts.forEach((o, i) => {
-      const monthYearDate = getMonthYearDate(o.publishDate);
-      if (i === 1) lastDate = monthYearDate;
-      let post = postByMonth.get(monthYearDate);
-      if (post) {
-        post.push(o);
-      } else {
-        post = [o];
-      }
-      postByMonth.set(monthYearDate, post);
-    });
+    if (posts) {
+      let lastDate = getMonthYearDate(posts[0].publishDate);
+      this.state.firstOpen &&
+        this.state.activeYear.push(lastDate.split("-")[0]) &&
+        this.state.activeMonth.push(lastDate);
+
+      posts.forEach(o => {
+        const monthYearDate = getMonthYearDate(o.publishDate);
+        let post = postByMonth.get(monthYearDate);
+        if (post) {
+          post.push(o);
+        } else {
+          post = [o];
+        }
+        postByMonth.set(monthYearDate, post);
+      });
+    }
 
     let postByYear = new Map();
     postByMonth.forEach((v, k) => {
@@ -84,11 +89,9 @@ class ArchivePage extends React.Component {
       postByYear.set(year, post);
     });
 
-    this.state.firstOpen && this.state.activeYear.push(lastDate.split("-")[0]) && this.state.activeMonth.push(lastDate);
-
     return (
       <Layout>
-        <div>
+        <div className={"post-main"}>
           <ul className="archive-container parent-archive-container">
             {Array.from(postByYear.entries()).map((post, i) => {
               const year = post[0];
@@ -110,7 +113,9 @@ class ArchivePage extends React.Component {
                             <span>{month}</span>
                           </button>
                           <ul
-                            className={`archive-container ${this.state.activeMonth.includes(contents.date) ? "visible" : ""}`}
+                            className={`archive-container ${
+                              this.state.activeMonth.includes(contents.date) ? "visible" : ""
+                            }`}
                           >
                             {contents.object.map(content => {
                               return (

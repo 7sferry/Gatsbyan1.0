@@ -39,6 +39,7 @@ body.medium-zoom--opened #___gatsby{
 }
 .post-main{
     -ms-grid-column: 2;
+    width: 100%;
 }
 
 
@@ -95,6 +96,17 @@ a, a:hover, .text-side:hover, .text-link:link, .text-link:hover, .text-link:visi
     scrollbar-color: #2a2c2e #1c1e1f;
 }
 
+.post-container{
+    display: inline-block;
+    text-align: justify;
+    width: 100%;
+    padding: 0 3rem;
+}
+
+.blog-content{
+    text-align: center;
+}
+
 @media only screen and (max-width: 850px) {
     .sidebar{display: none;}
     .index-main{
@@ -102,7 +114,16 @@ a, a:hover, .text-side:hover, .text-link:link, .text-link:hover, .text-link:visi
         flex-direction: row;
         justify-content: space-around;
     }
+    .post-container{
+        padding: unset;
+    }
     .main-layout{
         padding: 1.5rem 0 0;
+    }
+    .head-elements{
+        padding: .25rem;
+    }
+    .head-logo{
+        font-size: 1.25rem;
     }
 }
