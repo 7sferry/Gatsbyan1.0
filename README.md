@@ -1,7 +1,7 @@
 # Gatsbyan1.0
-I decide to share my blog template as open source on github. Access the web preview at 
+I decide to share my blog template as open source on github. View the web preview at 
 https://7sferry-gatsby-contentful-starters.netlify.app/
-You also can access my blog at
+You also can view my blog at
 https://ferry.now.sh
 
 ![](https://github.com/7sferry/Gatsbyan1.0/blob/master/static/example.png?raw=true)

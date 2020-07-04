@@ -46,6 +46,10 @@ body.medium-zoom--opened #___gatsby{
     color: #8ba2d2;
     transition: 9s;
 }
+.text-link{
+    line-height: 1.25em;
+}
+
 
 .text-side{
     color: #42b72a;
