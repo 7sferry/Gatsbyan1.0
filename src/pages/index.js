@@ -22,7 +22,7 @@ class IndexPage extends React.Component {
     const metadata = this.props.data.site.siteMetadata;
     return (
       <Layout>
-        <SEO title="Home" url={metadata.siteUrl} />
+        <SEO title="Gatsbyan" url={metadata.siteUrl} />
         <div className="post-main">
           {posts.map(post => {
             const tags = post.node.tags;

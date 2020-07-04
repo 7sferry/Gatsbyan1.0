@@ -1,10 +1,10 @@
 "use strict";
 
 module.exports = {
-  url: "https://your-site.com",
+  url: "https://7sferry-gatsby-contentful-starters.netlify.app",
   title: "Your blog title",
   tagline: "Your tagline",
-  description: `Built by Ferry Suhandri. Get your gatsby contentful template starters here!`,
+  description: `Built by 7sferry. Get your gatsby contentful template starters here!`,
   copyright: `© ${new Date().getFullYear()} Ferry Suhandri.`,
   author: {
     name: "Ferry S",
