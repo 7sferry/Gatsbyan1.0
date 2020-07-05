@@ -29,7 +29,13 @@ https://ferry.now.sh
 - Contentful CMS account
 - Facebook account - optional for blog comment
 
-## Step to Install:
+## Simple Step to Install With Gatsby Starters Command:
+- run 'gatsby new Gatsbyan1.0 https://github.com/7sferry/Gatsbyan1.0'
+- type 'cd Gatbsyan1.0' and enter
+- execute 'npm run develop'
+- your site would be run on http://localhost:8000
+
+## Step to Install Without Gatsby Starters Command:
 - run 'git clone https://github.com/7sferry/Gatsbyan1.0.git'
 - type 'cd Gatbsyan1.0' and enter
 - run 'npm install'
