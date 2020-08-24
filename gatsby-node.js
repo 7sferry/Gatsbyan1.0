@@ -13,7 +13,6 @@ exports.createPages = ({ graphql, actions }) => {
               edges {
                 node {
                   tags
-                  title
                   slug
                 }
               }
@@ -29,8 +28,8 @@ exports.createPages = ({ graphql, actions }) => {
         const postSizeByTag = new Map();
         const posts = result.data.allContentfulBlogPost.edges;
         posts.forEach(post => {
-          if(post.node.tags){
-            post.node.tags.forEach(tag =>{
+          if (post.node.tags) {
+            post.node.tags.forEach(tag => {
               let count = postSizeByTag.has(tag) ? postSizeByTag.get(tag) + 1 : 1;
               postSizeByTag.set(tag, count);
             });
@@ -49,7 +48,7 @@ exports.createPages = ({ graphql, actions }) => {
         Array.from({ length: numPages }).forEach((value, i) => {
           createPage({
             path: i === 0 ? `/` : `/${i + 1}`,
-            component: path.resolve("./src/pages/index.js"),
+            component: path.resolve("./src/templates/index.js"),
             context: {
               limit: postsPerPage,
               skip: i * postsPerPage,
@@ -62,7 +61,7 @@ exports.createPages = ({ graphql, actions }) => {
           Array.from({ length: numTags }).forEach((value, i) => {
             createPage({
               path: `/tags/${_.kebabCase(tag)}` + (i === 0 ? `` : `${i + 1}`),
-              component: path.resolve("./src/pages/index.js"),
+              component: path.resolve("./src/templates/index.js"),
               context: {
                 tag: tag,
                 limit: postsPerPage,

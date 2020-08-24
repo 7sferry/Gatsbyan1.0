@@ -28,7 +28,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sqip`,
     `gatsby-plugin-minify`,
     {
       resolve: `gatsby-plugin-sitemap`,
@@ -58,7 +57,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-responsive-iframe`,
           {
             resolve: `gatsby-remark-prismjs`,
             options: {

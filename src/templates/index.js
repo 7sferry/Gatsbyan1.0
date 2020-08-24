@@ -72,7 +72,7 @@ class IndexPage extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query HomeQuery($skip: Int, $limit: Int = 10, $tag: String) {
+  query HomeQuery($skip: Int, $limit: Int, $tag: String) {
     allContentfulBlogPost(
       skip: $skip
       limit: $limit
